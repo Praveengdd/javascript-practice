@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    background-color: antiquewhite;
+}
+
+.calculator {
+    background-color: #222222;
+    max-width: 25rem;
+    width: 100%;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.display {
+    width: 100%;
+    height: 5rem;
+    background-color: #111111;
+    color: green;
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 10px;
+    font-size: 35px;
+}
+
+.buttonsContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    padding: 20px 0;
+    user-select: none;
+}
+
+.buttonsContainer button {
+    width: 100%;
+    border-radius: 10px;
+    background-color: #333333;
+    border: none;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    transition: all linear 0.1s;
+}
+
+.buttonsContainer button:hover {
+    scale: 0.95;
+    background-color: #504e4e;
+}
+
+.buttonsContainer button:active{
+    scale: 0.9;
+    background-color: #504e4e;
+}
+
+.buttonsContainer .clearBtn {
+    background: red;
+    grid-column: span 3;
+}
+
+.buttonsContainer .clearBtn:hover {
+    background: rgb(241, 58, 58);
+    grid-column: span 3;
+}
+
+.buttonsContainer .operator {
+    background: orange;
+}
+
+.buttonsContainer .operator:hover {
+    background: rgb(231, 183, 94);
+}
+
+.buttonsContainer .equalTo {
+    background: rgb(8, 125, 214);
+    grid-column: span 2;
+}
+
+.buttonsContainer .equalTo:hover {
+    background: rgb(59, 155, 228);
+    grid-column: span 2;
+}
