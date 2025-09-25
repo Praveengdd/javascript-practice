@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(251, 250, 250);
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(152, 74, 17);
+  color: white;
+  padding: 10px 30px;
+  font-size: 35px;
+}
+
+.numberContainer {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: rgb(251, 250, 250);
+  gap: 1rem;
+  max-width: 60rem;
+  margin: auto;
+  padding: 40px;
+  user-select: none;
+}
+
+.circle {
+  width: 60px;
+  height: 60px;
+  background-color: rgb(228, 184, 148);
+  border-radius: 100%;
+  color: white;
+  display: grid;
+  place-content: center;
+  font-size: 25px;
+  cursor: grab;
+}
+
+.errorContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.errorContent {
+  width: 100%;
+  height: 100%;
+  max-width: 18rem;
+  max-height: 15rem;
+  background-color: rgb(190, 103, 46); 
+  backdrop-filter: blur(6px); 
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  border-radius: 10px;
+  font-weight: 900;
+  font-size: 32px;
+  color: rgb(255, 255, 255);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.errorContent p {
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+}
+
+.errorContent button {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: brown;
+    color: white;
+    font-size: 20px;
+    font-weight: 800;
+    border: none;
+    border: 1px solid rgb(74, 73, 73);
+    cursor: pointer;
+    scale: 1.1;
+    transition: all linear 0.2s;
+}
+
+.errorContainer button:hover {
+    scale: 0.9;
+}
+
+
