@@ -1,0 +1,12 @@
+{
+    "name": "Praveen Kumar G D",
+    "age": 22,
+    "isMarried": false,
+    "location": "Mandya",
+    "numbers": [1, 2, 3, 4],
+    "pointers": null,
+    "points": {
+        "lat": 23.323,
+        "longt": 78.223
+    }
+}

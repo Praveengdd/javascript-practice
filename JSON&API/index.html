@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>JSON AND API</title>
+  </head>
+  <body>
+    <h1>Weather Fetching API</h1>
+    <div class="searchBar">
+      <input id="cityName" type="text" placeholder="Enter city" />
+      <button class="submitBtn">Submit</button>
+    </div>
+
+    <div class="weatherDetails">
+      <div class="weatherContents">
+        <p>Location: <span class="cityLoc"></span></p>
+        <p>Temperature: <span class="tempValues"></span></p>
+        <p class="feelsLike"></p>
+        <p>Feels Like:<span class="tempFeelsLike"></span></p>
+        <p>Last Updated At: <span class="lastUpdatedAt"></span></p>
+      </div>
+
+      <button class="anotherCity">Try for another city</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
